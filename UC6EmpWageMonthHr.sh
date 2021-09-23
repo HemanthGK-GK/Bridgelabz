@@ -7,7 +7,7 @@ MaxHours=100;
 TotWorkingDays=0;
 TotWorkingHours=0;
 
-while [[ $TotWorkingHours -lt $MaxHours && $TotWorkingDays -lt $MaxHours ]]
+while [[ $TotWorkingHours -lt $MaxHours && $TotWorkingDays -lt $MaxWorkingDays ]]
 do
  ((TotWorkingDays++))
  Check=$((RANDOM % 3))
